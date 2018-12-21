@@ -8,7 +8,8 @@ import { IData } from '../interfaces/idata';
 })
 export class WordpressService {
 
-  private URL = 'http://163.172.139.224/wp-json';
+  // private URL = 'http://163.172.139.224/wp-json';
+  private URL = 'http://163.172.139.224/wp-json/wp/v2/posts';
 
   constructor(private http: HttpClient) {  }
 

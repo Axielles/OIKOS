@@ -9,13 +9,13 @@ import { IData } from '../app/interfaces/idata';
 })
 export class AppComponent implements OnInit {
   title = 'oikos';
-  data: IData[];
+  articles: IData[];
 
   constructor(private wordpress: WordpressService) { }
 
   ngOnInit() {
     this.wordpress.getWordpress().subscribe(data => {
-      this.data = data;
+      this.articles = data;
       console.log(data);
     });
   }
